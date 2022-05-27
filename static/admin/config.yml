@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: PavanSargar/sport-tech-blog
+  repo: PavanSargar/test-blog
   commit_messages:
     create: "Create {{collection}} “{{slug}}”"
     update: "Update {{collection}} “{{slug}}”"
@@ -11,8 +11,8 @@ backend:
 local_backend: true
 media_folder: static/assets
 public_folder: assets
-site_url: https://sportech-blog-test.netlify.app
-display_url: https://sportech-blog-test.netlify.app 
+# site_url: https://sportech-blog-test.netlify.app
+# display_url: https://sportech-blog-test.netlify.app 
 
 slug:
   encoding: "ascii"
