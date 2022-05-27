@@ -1,0 +1,35 @@
+backend:
+  name: github
+  repo: PavanSargar/sport-tech-blog
+  commit_messages:
+    create: "Create {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] Upload “{{path}}”"
+    deleteMedia: "[skip ci] Delete “{{path}}”"
+
+local_backend: true
+media_folder: static/assets
+public_folder: assets
+site_url: https://sportech-blog-test.netlify.app
+display_url: https://sportech-blog-test.netlify.app 
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "_"
+
+
+collections:
+  - name: posts
+    label: Blog
+    folder: src/blog
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: datetime}
+      - { name: author, lable: "Author", widget: string, default: "sporttech"}
+      - { name: title, label: Title, pattern: ['.{60,}', "Must have at least 60 characters"] }
+      - { name: quote, label: Quote, required: false}
+      - {label: "Featured Image", name: "thumbnail", widget: "image", required: true}
+      - { name: body, label: Body, widget: markdown }

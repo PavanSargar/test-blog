@@ -1,0 +1,52 @@
+.card {
+  max-width: 23rem;
+  min-width: 18rem;
+  user-select: none;
+}
+
+.title h2 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: white;
+}
+
+.title h2:hover {
+  cursor: pointer;
+  color: #febd01;
+}
+
+span {
+  cursor: pointer !important;
+}
+
+[data-button-type="comment"]:hover {
+  color: #febd01;
+}
+
+@media screen and (max-width: 1028px) {
+  .card {
+    max-width: 20rem;
+  }
+}
+@media screen and (max-width: 928px) {
+  .card {
+    max-width: 18rem;
+  }
+}
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 540px) {
+  .card {
+    max-width: 20rem;
+  }
+  .title h2 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 405px) {
+  .title h2 {
+    font-size: 20px !important;
+  }
+}

@@ -1,0 +1,38 @@
+* {
+    user-select: none;
+}
+span {
+  cursor: pointer !important;
+}
+
+[data-button-type="comment"]:hover {
+  color: #febd01;
+}
+
+.container {
+  border: 1px solid gray;
+  padding: 4rem 6rem;
+  margin: 4rem auto;
+}
+
+.title h1 {
+    font-weight: 900;
+}
+
+.quote q {
+    color: rgb(210, 166, 63);
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.social span:not(:first-child) {
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 540px) {
+    .container {
+        padding: 2rem;
+    }
+}
